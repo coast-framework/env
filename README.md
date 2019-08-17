@@ -16,11 +16,12 @@ A_VALUE=hello
 (env/env :a-value) ; => hello
 ```
 
-## Add to your project
+## Install
+
+Add this to your [deps.edn](https://clojure.org/guides/deps_and_cli)
 
 ```clojure
-{:deps {coast-framework/env {:git/url "https://github.com/coast-framework/env"
-                             :sha "552785ddaa43ba3652a62df70576423890e50d63"}}}
+coast-framework/env {:mvn/version "1.0.2"}}
 ```
 
 ## Usage
