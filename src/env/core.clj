@@ -7,7 +7,7 @@
 (defn- fmt
   "This formats .env keys that LOOK_LIKE_THIS to keys that :look-like-this"
   [m]
-  (->> (map (fn [[k v]] [(-> k .toLowerCase (string/replace #"_" "-") keyword) v]) m)
+  (->> (map (fn [[k v]] [(-> k string/lower-case (string/replace #"_" "-") keyword) v]) m)
        (into {})))
 
 
