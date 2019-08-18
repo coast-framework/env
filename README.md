@@ -21,7 +21,7 @@ A_VALUE=hello
 Add this to your [deps.edn](https://clojure.org/guides/deps_and_cli)
 
 ```clojure
-coast-framework/env {:mvn/version "1.0.2"}}
+coast-framework/env {:mvn/version "1.0.3"}}
 ```
 
 ## Usage
